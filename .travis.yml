@@ -1,5 +1,7 @@
 language: php
 
+sudo: false
+
 php:
   - 5.5
 
@@ -8,3 +10,6 @@ install:
 
 script:
   - ./bin/phpunit -c app/
+cache:
+  directories:
+    - ~/.composer/cache
